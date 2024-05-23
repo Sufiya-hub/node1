@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --bgcolor: #fee5c9;
+  --btncolor: #ea8912;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bgcolor);
+  padding: 1rem 6rem;
+}
+.head {
+  display: flex;
+  gap: 30px;
+}
+.head a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.head a:hover {
+  text-decoration: underline 3px var(--btncolor);
+}
+header button,
+.data button,
+.g2 button,
+.c4 button {
+  background: var(--btncolor);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+}
+header button:hover,
+.data button:hover,
+.g2 button:hover,
+.c4 button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.sec_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+  background: var(--bgcolor);
+}
+.data {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 20px;
+}
+span {
+  color: var(--btncolor);
+}
+.data h1 {
+  font-size: 60px;
+}
+.data p {
+  font-size: 25px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  height: 400px;
+  width: 600px;
+}
+.sec_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  height: 100vh;
+}
+.c1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.c1 p,
+.c2 p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c1 h1,
+.c2 h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 3rem;
+}
+.g1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  border: var(--btncolor) 2px solid;
+  padding: 2rem;
+}
+.g1:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--btncolor);
+}
+.g1 img {
+  height: 200px;
+  width: 200px;
+}
+.sec_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bgcolor);
+  padding: 6rem;
+  height: 100vh;
+}
+.c2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 4rem;
+  gap: 40px;
+}
+.g2 {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 20px;
+}
+.g2:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--btncolor);
+}
+.g2 h4 {
+  font-weight: 400;
+}
+.g2 ion-icon {
+  font-size: 60px;
+  color: var(--btncolor);
+}
+.sec_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 4rem;
+  height: 100vh;
+}
+.c3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.c4 {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 3rem;
+  gap: 30px;
+}
+.c4 h2,
+.c5 h2 {
+  font-size: 40px;
+}
+.c5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.c5 p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+footer {
+  background: var(--btncolor);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  color: #fff;
+  gap: 100px;
+}
+.sec_5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec_5 h2 {
+  font-size: 40px;
+}
+.c6 {
+  display: flex;
+  gap: 20px;
+  font-weight: 300;
+}
+.c6 h3:hover {
+  text-decoration: #fff 2px underline;
+}
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="g9" placeholder="Name" />
+    <input type="text" name="" id="h0" placeholder="Price" />
+    <button id="btn">Submit</button>
+    <script>
+      document.querySelector('#btn').addEventListener('click', async () => {
+        const name = document.querySelector('#g9').value;
+        const price = document.querySelector('#h0').value;
+        const cookies = document.cookie.split('; ');
+        let cookie;
+        cookies.forEach((el) => {
+          if (el.split('=')[0] === 'jwt') {
+            cookie = el.split('=')[1];
+          }
+        });
+        console.log(cookie);
+        const data = await fetch('http://127.0.0.1:8080/burgers/addBurger', {
+          headers: {
+            'Content-Type': 'application/json',
+            cookie,
+          },
+          credentials: 'include',
+          method: 'POST',
+          body: JSON.stringify({
+            name,
+            price,
+            cookie,
+          }),
+        });
+        const res = await data.json();
+        console.log(res);
+      });
+    </script>
+  </body>
+</html>
